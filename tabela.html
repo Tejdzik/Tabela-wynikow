@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="UTF-8">
+	<title>Tabela wyników</title>
+	<link rel="stylesheet" type="text/css" href="tabela.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+
+<h1><span id="wynik1">0</span> - <span id="wynik2">0</span></h1>
+
+<p>Gracie do: <span>5</span></p>
+
+<div class="sterowanie">
+<input type="number" onkeypress="return event.charCode >= 48" min="1"> 
+<!-- charCode >= 48 - tylko liczby dodatnie -->
+
+
+	<button class="przycisk" id="g1">Gracz Pierwszy</button>
+	<button class="przycisk" id="g2">Gracz Drugi</button>
+	<button class="przycisk" id="restart">Restart</button>	
+</div>
+
+	
+<script type="text/javascript" src="tabela.js"></script>
+</body>
+</html>
